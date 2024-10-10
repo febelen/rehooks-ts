@@ -4,7 +4,7 @@
   "description": "A collectiion of production-ready reusable hooks.",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "check-types": "turbo run check-types",
     "lint": "turbo run lint"
   },

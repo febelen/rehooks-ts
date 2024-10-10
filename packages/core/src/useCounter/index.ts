@@ -14,7 +14,7 @@ type CounterReturnType = {
 };
 
 export function useCounter(initialValue?: number): CounterReturnType {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(initialValue ?? 0);
 
   const increment = useCallback(() => setCount((x) => x + 1), []);
   const decrement = useCallback(() => setCount((x) => x - 1), []);

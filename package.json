@@ -1,0 +1,22 @@
+{
+  "name": "rehooks-ts",
+  "version": "0.0.1",
+  "description": "A collectiion of production-ready reusable hooks.",
+  "scripts": {},
+  "keywords": [
+    "feblen",
+    "rehooks",
+    "react",
+    "typescript",
+    "hooks"
+  ],
+  "author": {
+    "name": "febelen",
+    "email": "contact@pyr33x.ir"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  }
+}

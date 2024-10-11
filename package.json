@@ -2,13 +2,22 @@
   "name": "rehooks-ts",
   "version": "0.0.1",
   "description": "A collectiion of production-ready reusable hooks.",
-  "scripts": {},
+  "scripts": {
+    "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\"",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "check-types": "turbo run check-types",
+    "lint": "turbo run lint"
+  },
   "keywords": [
     "feblen",
     "rehooks",
     "react",
     "typescript",
-    "hooks"
+    "hooks",
+    "monorepo",
+    "turbo"
   ],
   "author": {
     "name": "febelen",
@@ -17,6 +26,8 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.8"
-  }
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "turbo": "^2.1.3"
+  },
+  "packageManager": "pnpm@9.11.0"
 }

@@ -15,7 +15,7 @@ export function Hero() {
         </span>
       </h1>
       <p className="dark:text-fd-muted-foreground/50 text-fd-muted-foreground mt-1 text-balance text-base lg:text-xl">
-        An optimized, lightweight, and flexible react production-ready hooks
+        An optimized, lightweight, and reusable react production-ready hooks
         library written in TypeScript.
       </p>
       <div className="mt-5 flex flex-row flex-wrap justify-center gap-2">

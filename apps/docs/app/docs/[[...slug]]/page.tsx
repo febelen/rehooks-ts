@@ -1,13 +1,13 @@
-import { source } from '@/app/source';
-import type { Metadata } from 'next';
+import { source } from "@/app/source";
+import type { Metadata } from "next";
 import {
   DocsPage,
   DocsBody,
   DocsDescription,
   DocsTitle,
-} from 'fumadocs-ui/page';
-import { notFound } from 'next/navigation';
-import defaultMdxComponents from 'fumadocs-ui/mdx';
+} from "fumadocs-ui/page";
+import { notFound } from "next/navigation";
+import defaultMdxComponents from "fumadocs-ui/mdx";
 
 export default async function Page({
   params,

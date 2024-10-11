@@ -17,6 +17,7 @@
     "fumadocs-mdx": "10.0.2"
   },
   "devDependencies": {
+    "rehooks-ts": "workspace:*",
     "@types/node": "22.5.4",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",

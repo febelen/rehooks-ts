@@ -1,7 +1,7 @@
 {
   "name": "rehooks-ts",
   "version": "0.0.1",
-  "description": "A collectiion of production-ready reusable hooks.",
+  "description": "An optimized, lightweight, and reusable react production-ready hooks library written in TypeScript.",
   "scripts": {
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\"",

@@ -1,6 +1,6 @@
 {
   "name": "rehooks-ts",
-  "description": "A collectiion of production-ready reusable hooks.",
+  "description": "An optimized, lightweight, and reusable react production-ready hooks library written in TypeScript.",
   "version": "0.0.1",
   "sideEffects": false,
   "main": "./dist/index.mjs",

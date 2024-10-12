@@ -42,6 +42,9 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@febelen/rehooks-ts':
+        specifier: workspace:*
+        version: link:../../packages/core
       '@radix-ui/react-slot':
         specifier: ^1.1.0
         version: 1.1.0(@types/react@18.3.11)(react@18.3.1)
@@ -69,9 +72,6 @@ importers:
       postcss:
         specifier: ^8.4.45
         version: 8.4.47
-      rehooks-ts:
-        specifier: workspace:*
-        version: link:../../packages/core
       tailwind-merge:
         specifier: ^2.5.3
         version: 2.5.3

@@ -26,7 +26,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "postcss": "^8.4.45",
-    "rehooks-ts": "workspace:*",
+    "@febelen/rehooks-ts": "workspace:*",
     "tailwind-merge": "^2.5.3",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"

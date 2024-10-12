@@ -22,14 +22,14 @@ export function Hero() {
         <Button
           variant="hero"
           size="circular"
-          onClick={() => copy("bun add rehooks-ts")}
+          onClick={() => copy("npm install rehooks-ts")}
           className="font-mono"
         >
-          {isCopied ? "Copied to Clipboard!" : "$ bun add rehooks-ts"}
+          {isCopied ? "Copied to Clipboard!" : "$ npm install rehooks-ts"}
         </Button>
         <Link href="/docs" className="outline-none ring-0">
           <Button size="circular" variant="secondary" className="font-mono">
-            Checkout Docs
+            Explore Docs
           </Button>
         </Link>
       </div>

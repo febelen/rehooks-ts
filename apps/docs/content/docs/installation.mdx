@@ -24,7 +24,7 @@ Once you have installed Rehooks, you can start using the hooks in your project. 
 import { useCounter } from "@febelen/rehooks-ts";
 
 function Component() {
-  const [count, increment, decrement, reset, setCount] = useCounter(0);
+  const { count, increment, decrement, reset, setCount } = useCounter(0);
 
   function multiply(value) {
     setCount((prev) => prev * value);

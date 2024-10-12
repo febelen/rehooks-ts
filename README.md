@@ -15,7 +15,7 @@
 
 <h1 align="center">🪄 Usage</h1>
 <p align="center">
-You can easily import hooks from `@pyr33x/hooks` and boom!
+You can easily import hooks from `@febelen/rehooks-ts` and boom!
 </p>
 
 ```tsx

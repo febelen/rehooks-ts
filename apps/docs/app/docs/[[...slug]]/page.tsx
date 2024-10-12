@@ -1,13 +1,14 @@
-import { source } from "@/app/source";
-import type { Metadata } from "next";
 import {
   DocsPage,
   DocsBody,
-  DocsDescription,
   DocsTitle,
+  DocsDescription,
 } from "fumadocs-ui/page";
-import { notFound } from "next/navigation";
 import defaultMdxComponents from "fumadocs-ui/mdx";
+import { getImageMeta } from "fumadocs-ui/og";
+import { notFound } from "next/navigation";
+import { source } from "@/app/source";
+import type { Metadata } from "next";
 
 export default async function Page({
   params,
@@ -38,8 +39,17 @@ export function generateMetadata({ params }: { params: { slug?: string[] } }) {
   const page = source.getPage(params.slug);
   if (!page) notFound();
 
+  const image = getImageMeta("og", page.slugs);
+
   return {
     title: page.data.title,
     description: page.data.description,
+    openGraph: {
+      images: image,
+    },
+    twitter: {
+      images: image,
+      card: "summary_large_image",
+    },
   } satisfies Metadata;
 }

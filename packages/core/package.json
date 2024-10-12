@@ -1,5 +1,5 @@
 {
-  "name": "rehooks-ts",
+  "name": "@febelen/rehooks-ts",
   "description": "An optimized, lightweight, and reusable react production-ready hooks library written in TypeScript.",
   "version": "0.1.1",
   "private": false,

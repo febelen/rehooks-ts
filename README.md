@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/Banner.jpg" alt="rehooks" />
+  <img src="./assets/banner.jpg" alt="rehooks" />
 </div>
 
 <br />

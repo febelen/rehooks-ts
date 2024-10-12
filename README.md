@@ -15,7 +15,7 @@
 
 <h1 align="center">🪄 Usage</h1>
 <p align="center">
-You can easily import hooks from `@pyr33x/hooks` and boom!
+You can easily import hooks from `@febelen/rehooks-ts` and boom!
 </p>
 
 ```tsx
@@ -30,5 +30,5 @@ function Component() {
 <h1 align="center">🧾 License</h1>
 
 <p align="center">
-<a href="https://npmjs.com/package/@pyr33x/hooks">useHooks</a> is licensed under the MIT License.
+<a href="https://www.npmjs.com/package/@febelen/rehooks-ts">useHooks</a> is licensed under the MIT License.
 </p>

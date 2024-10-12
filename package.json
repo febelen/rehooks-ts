@@ -8,7 +8,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "check-types": "turbo run check-types",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "prepare": "husky install"
   },
   "keywords": [
     "feblen",
@@ -25,6 +26,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "husky": "^9.1.6",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "turbo": "^2.1.3"

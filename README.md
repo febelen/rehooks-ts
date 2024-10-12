@@ -10,7 +10,7 @@
 </div>
 
 <div align="center">
-  <pre>npm i --save-dev <a href="#">rehooks-ts</a></pre>
+  <pre>npm i --save-dev <a href="#">@febelen/rehooks-ts</a></pre>
 </div>
 
 <h1 align="center">🪄 Usage</h1>
@@ -19,7 +19,7 @@ You can easily import hooks from `@febelen/rehooks-ts` and boom!
 </p>
 
 ```tsx
-import { useCounter } from 'rehooks-ts';
+import { useCounter } from '@febelen/rehooks-ts';
 
 function Component() {
   const [count, increment, decrement] = useCounter(0);

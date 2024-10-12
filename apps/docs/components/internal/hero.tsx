@@ -1,6 +1,6 @@
 "use client";
 
-import { useClipboard } from "rehooks-ts";
+import { useClipboard } from "@febelen/rehooks-ts";
 import { Button } from "@/components/ui";
 import Link from "next/link";
 
@@ -22,10 +22,12 @@ export function Hero() {
         <Button
           variant="hero"
           size="circular"
-          onClick={() => copy("npm install rehooks-ts")}
+          onClick={() => copy("npm install @febelen/rehooks-ts")}
           className="font-mono"
         >
-          {isCopied ? "Copied to Clipboard!" : "$ npm install rehooks-ts"}
+          {isCopied
+            ? "Copied to Clipboard!"
+            : "$ npm install @febelen/rehooks-ts"}
         </Button>
         <Link href="/docs" className="outline-none ring-0">
           <Button size="circular" variant="secondary" className="font-mono">

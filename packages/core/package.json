@@ -1,7 +1,8 @@
 {
   "name": "rehooks-ts",
   "description": "An optimized, lightweight, and reusable react production-ready hooks library written in TypeScript.",
-  "version": "0.0.1",
+  "version": "0.1.1",
+  "private": false,
   "sideEffects": false,
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -47,5 +48,13 @@
   },
   "dependencies": {
     "react": "^18.3.1"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/febelen/rehooks-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/febelen/rehooks-ts/issues"
+  },
+  "homepage": "https://github.com/febelen/rehooks-ts#readme"
 }

@@ -15,7 +15,7 @@
 
 <h1 align="center">🪄 Usage</h1>
 <p align="center">
-You can easily import hooks from <pre>@febelen/rehooks-ts</pre> and boom!
+You can easily import hooks from <b>@febelen/rehooks-ts</b> and boom!
 </p>
 
 ```tsx

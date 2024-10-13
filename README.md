@@ -10,7 +10,7 @@
 </div>
 
 <div align="center">
-  <pre>npm i --save-dev <a href="#">@febelen/rehooks-ts</a></pre>
+  <pre>npm i --save-dev <a href="https://www.npmjs.com/package/@febelen/rehooks-ts">@febelen/rehooks-ts</a></pre>
 </div>
 
 <h1 align="center">🪄 Usage</h1>

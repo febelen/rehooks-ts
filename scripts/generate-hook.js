@@ -55,7 +55,7 @@ rl.question("Enter the hook name: ", function (hookName) {
   console.log(`File index.ts created inside ${camelCaseHookName} directory.`);
 
   const mainIndexPath = path.join(__dirname, "./../packages/core/src/index.ts");
-  const exportStatement = `export * from './${camelCaseHookName}';\n`;
+  const exportStatement = `export * from "./${camelCaseHookName}";\n`;
 
   const currentContent = fs.readFileSync(mainIndexPath, "utf8");
   if (!currentContent.includes(exportStatement)) {

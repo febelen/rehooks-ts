@@ -54,6 +54,17 @@ rl.question("Enter the hook name: ", function (hookName) {
   fs.writeFileSync(indexFilePath, fileContent);
   console.log(`File index.ts created inside ${camelCaseHookName} directory.`);
 
+  const demoFilePath = path.join(dirPath, `${camelCaseHookName}.demo.tsx`);
+  const demoFileContent =
+    `export default function Component() {\n` +
+    `  return <div></div>;\n` +
+    `}\n`;
+
+  fs.writeFileSync(demoFilePath, demoFileContent);
+  console.log(
+    `File ${camelCaseHookName}.demo.tsx created inside ${camelCaseHookName} directory.`,
+  );
+
   const mainIndexPath = path.join(__dirname, "./../packages/core/src/index.ts");
   const exportStatement = `export * from "./${camelCaseHookName}";\n`;
 

@@ -9,7 +9,8 @@
     "dev": "turbo run dev",
     "check-types": "turbo run check-types",
     "lint": "turbo run lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "gen-hook": "node ./scripts/generate-hook.js"
   },
   "keywords": [
     "feblen",

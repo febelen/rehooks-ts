@@ -1,0 +1,47 @@
+---
+title: useClipboard
+description: A hook that provides a function to copy text to the clipboard.
+---
+
+# useClipboard
+
+The `useClipboard` hook is a simple hook that provides a function to copy text to the clipboard. It is useful when you need to copy text to the clipboard in your component.
+
+## Usage
+
+```jsx
+import { useClipboard } from "@febelen/rehooks-ts";
+
+function Component() {
+  const { copy, isCopied } = useClipboard();
+
+  return (
+    <div>
+      <button onClick={() => copy("Hello, world!")}>
+        Copy "Hello, world!"
+      </button>
+      <p>Is copied: {isCopied ? "Yes" : "No"}</p>
+    </div>
+  );
+}
+```
+
+## API
+
+### useClipboard
+
+```ts
+function useClipboard(): {
+  copy: (text: string) => void;
+  isCopied: boolean;
+};
+```
+
+Returns a function to copy text to the clipboard and a boolean indicating whether the text has been copied.
+
+#### Returns
+
+| Name     | Type                     | Description                                            |
+| -------- | ------------------------ | ------------------------------------------------------ |
+| copy     | `(text: string) => void` | A function to copy text to the clipboard.              |
+| isCopied | `boolean`                | A boolean indicating whether the text has been copied. |

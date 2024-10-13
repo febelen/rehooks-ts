@@ -46,7 +46,7 @@ rl.question("Enter the hook name: ", function (hookName) {
   }
 
   const fileContent =
-    `export const ${camelCaseHookName} = () => {\n` +
+    `export function ${camelCaseHookName}(){\n` +
     `  // Your hook logic here\n` +
     `  return null;\n` +
     `};\n`;

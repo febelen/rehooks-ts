@@ -1,5 +1,6 @@
 import { RootProvider } from "fumadocs-ui/provider";
 import { JetBrains_Mono } from "next/font/google";
+import { NAME, DESCRIPTION } from "utils";
 import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
@@ -7,22 +8,21 @@ import "./global.css";
 
 export const metadata = {
   // PWA
-  applicationName: "Rehooks",
+  applicationName: NAME,
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Rehooks",
+    title: NAME,
   },
   formatDetection: {
     telephone: false,
   },
 
   title: {
-    default: "Rehooks",
-    template: "%s - Rehooks",
+    default: NAME,
+    template: `%s - ${NAME}`,
   },
-  description:
-    "An optimized, lightweight, and reusable react production-ready hooks library written in TypeScript.",
+  description: DESCRIPTION,
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",

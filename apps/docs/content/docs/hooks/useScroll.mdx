@@ -1,0 +1,28 @@
+---
+title: useScroll
+description: A hook that returns a boolean value indicating whether the user has scrolled horizontally beyond a specified threshold.
+---
+
+# useScroll
+
+A hook that returns a boolean value indicating whether the user has scrolled horizontally beyond a specified threshold.
+
+## Usage
+
+```ts
+import { useScroll } from "@febelen/rehooks-ts";
+
+const scrolled = useScroll(100);
+```
+
+## Parameters
+
+| Name        | Type     | Description                                                    |
+| ----------- | -------- | -------------------------------------------------------------- |
+| `threshold` | `number` | The amount of pixels to scroll before the hook returns `true`. |
+
+## Returns
+
+| name       | type      | description                                           |
+| ---------- | --------- | :---------------------------------------------------- |
+| `scrolled` | `boolean` | A boolean value indicating whether the user scrolled. |

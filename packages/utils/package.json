@@ -1,0 +1,35 @@
+{
+  "name": "utils",
+  "description": "Utility functions and constants for rehooks",
+  "version": "0.0.1",
+  "private": true,
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint src/",
+    "dev": "tsup --watch",
+    "check-types": "tsc --noEmit"
+  },
+  "keywords": [
+    "rehooks",
+    "utils",
+    "utility",
+    "functions"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.3",
+    "tsconfig": "workspace:*",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3"
+  }
+}

@@ -106,6 +106,21 @@ importers:
 
   packages/tsconfig: {}
 
+  packages/utils:
+    devDependencies:
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      tailwind-merge:
+        specifier: ^2.5.3
+        version: 2.5.3
+      tsconfig:
+        specifier: workspace:*
+        version: link:../tsconfig
+      tsup:
+        specifier: ^8.3.0
+        version: 8.3.0(jiti@1.21.6)(postcss@8.4.47)(typescript@5.6.3)(yaml@2.5.1)
+
 packages:
 
   '@alloc/quick-lru@5.2.0':

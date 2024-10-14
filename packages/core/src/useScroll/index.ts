@@ -17,7 +17,7 @@ export function useScroll(threshold: number): boolean {
   const [scrolled, setScrolled] = useState(false);
 
   const onScroll = useCallback(() => {
-    setScrolled(window.scrollX > threshold);
+    setScrolled(window.scrollY > threshold);
   }, [threshold]);
 
   useEffect(() => {

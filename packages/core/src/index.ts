@@ -6,3 +6,4 @@ export * from "./useToggle";
 export * from "./useEventListener";
 export * from "./useEventCallback";
 export * from "./useHover";
+export * from "./useScroll";

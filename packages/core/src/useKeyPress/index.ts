@@ -9,7 +9,7 @@ interface KeyConfig {
 
 /**
  * Key configuration object for the useKeyPress hook.
- * 
+ *
  * @typedef {Object} KeyConfig
  * @property {string} key - The key to listen for.
  * @property {boolean} [ctrl] - Whether the Ctrl key must be pressed. Optional.
@@ -19,10 +19,10 @@ interface KeyConfig {
 
 /**
  * Custom hook to detect if a specified key is pressed.
- * 
+ *
  * @param {KeyConfig} config - The configuration for the key press detection.
  * @returns {boolean} - A boolean value indicating whether the specified key combination is currently pressed.
- * 
+ *
  * @example
  * // Usage:
  * const isEnterPressed = useKeyPress({ key: "Enter" });
@@ -71,4 +71,3 @@ export function useKeyPress(config: KeyConfig): boolean {
 
   return keyPressed;
 }
-

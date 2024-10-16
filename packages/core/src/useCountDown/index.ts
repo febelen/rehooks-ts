@@ -12,6 +12,15 @@ type CountdownControllers = {
   resetCountdown: () => void;
 };
 
+/**
+ * Custom hook that implements a countdown functionality.
+ *
+ * @param {CountdownOptions} options - The options for the countdown.
+ * @param {number} options.countStart - The starting count value.
+ * @param {number} [options.countStop=0] - The count value at which the countdown stops.
+ * @param {number} [options.intervalMs=1000] - The interval in milliseconds at which the countdown updates.
+ * @returns {[number, CountdownControllers]} - A tuple containing the current count and countdown controllers.
+ */
 export function useCountdown({
   countStart,
   countStop = 0,

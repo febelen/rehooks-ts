@@ -9,3 +9,4 @@ export * from "./useHover";
 export * from "./useScroll";
 export * from "./useKeyPress";
 export * from "./useDebounceValue";
+export * from "./useDebounceCallback";

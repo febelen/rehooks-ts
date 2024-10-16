@@ -1,5 +1,17 @@
 import { useCallback, useEffect, useRef } from "react";
 
+/**
+ * Custom hook that debounces a callback function, executing it after the specified delay.
+ *
+ * @param {Function} callback - The callback function to debounce.
+ * @param {number} delay - The debounce delay in milliseconds.
+ * @returns {Function} - A debounced version of the callback function.
+ *
+ * @example
+ * const debouncedSave = useDebounceCallback((value) => {
+ *   console.log("Saving data:", value);
+ * }, 500);
+ */
 export function useDebounceCallback<T extends (...args: any[]) => void>(
   callback: T,
   delay: number,

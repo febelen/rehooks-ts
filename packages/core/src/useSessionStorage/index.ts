@@ -1,5 +1,16 @@
 import { useState, useEffect } from "react";
 
+/**
+ * Custom hook that manages a state variable with session storage.
+ *
+ * @param {string} key - The key for the session storage item.
+ * @param {T} initialValue - The initial value for the state variable.
+ * @returns {[T, (value: T) => void]} An array containing the state variable and a setter function.
+ *
+ * @example
+ * const [name, setName] = useSessionStorage('name', 'John Doe');
+ * // The name variable will be persisted in session storage under the key 'name'.
+ */
 export function useSessionStorage<T>(
   key: string,
   initialValue: T,

@@ -12,22 +12,22 @@ A nifty little hook that keeps your state variable in sync with the local storag
 ```ts
 import { useLocalStorage } from "@febelen/rehooks-ts";
 
-const [name, setName] = useLocalStorage('name', 'John Doe');
+const [name, setName] = useLocalStorage("name", "John Doe");
 ```
 
 ## Parameters
 
-| Name          | Type     | Description                                               |
-| ------------- | -------- | --------------------------------------------------------- |
-| `key`         | `string` | The key for the local storage item.                       |
-| `initialValue`| `T`      | The initial value for the state variable.                 |
+| Name           | Type     | Description                               |
+| -------------- | -------- | ----------------------------------------- |
+| `key`          | `string` | The key for the local storage item.       |
+| `initialValue` | `T`      | The initial value for the state variable. |
 
 ## Returns
 
-| Name        | Type                      | Description                                                      |
-| ----------- | ------------------------- | ---------------------------------------------------------------- |
-| `storedValue`| `T`                      | The current value synchronized with local storage.               |
-| `setValue`  | `(value: T) => void`      | A function to update the state and sync it with local storage.    |
+| Name          | Type                 | Description                                                    |
+| ------------- | -------------------- | -------------------------------------------------------------- |
+| `storedValue` | `T`                  | The current value synchronized with local storage.             |
+| `setValue`    | `(value: T) => void` | A function to update the state and sync it with local storage. |
 
 ## Example
 

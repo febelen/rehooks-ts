@@ -1,0 +1,60 @@
+---
+title: useSessionStorage
+description: A handy hook that manages a state variable using session storage, ensuring data persistence during a browser session.
+---
+
+# Storing Temporary Data with useSessionStorage
+
+This custom hook helps you manage a state variable that's stored in the browser's session storage. It provides a convenient way to keep data persistent throughout a single browser session.
+
+## Usage
+
+```ts
+import { useSessionStorage } from "@febelen/rehooks-ts";
+
+const [name, setName] = useSessionStorage("name", "John Doe");
+```
+
+## Parameters
+
+| Name           | Type     | Description                               |
+| -------------- | -------- | ----------------------------------------- |
+| `key`          | `string` | The key for the session storage item.     |
+| `initialValue` | `T`      | The initial value for the state variable. |
+
+## Returns
+
+| Name          | Type                 | Description                                                      |
+| ------------- | -------------------- | ---------------------------------------------------------------- |
+| `storedValue` | `T`                  | The current value synchronized with session storage.             |
+| `setValue`    | `(value: T) => void` | A function to update the state and sync it with session storage. |
+
+## Example
+
+```tsx
+import React from "react";
+import { useSessionStorage } from "@febelen/rehooks-ts";
+
+export default function SessionStorageDemo() {
+  const [name, setName] = useSessionStorage("name", "John Doe");
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
+  return (
+    <div>
+      <h2>Session Storage Demo</h2>
+      <input
+        type="text"
+        value={name}
+        onChange={handleChange}
+        placeholder="Enter your name"
+      />
+      <p>Your name is: {name}</p>
+    </div>
+  );
+}
+```
+
+This `useSessionStorage` hook makes it easy to work with temporary data that needs to persist only for the duration of the browser session. It's a great solution for short-lived data that doesn't need to be stored permanently.

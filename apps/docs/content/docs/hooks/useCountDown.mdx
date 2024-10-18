@@ -1,0 +1,38 @@
+---
+title: useCountDown
+description: A hook that offers countdown functionality with adjustable start, stop, and interval parameters.
+---
+
+# useCountDown
+
+A handy hook that gives you countdown capabilities, letting you start, stop, and reset the countdown with customizable options.
+
+## Usage
+
+```ts
+import { useCountDown } from "@febelen/rehooks-ts";
+
+const [counter, { startCountdown, stopCountdown, resetCountdown }] =
+  useCountDown({
+    countStart: 10,
+    intervalMs: 1000,
+    countStop: 0,
+  });
+```
+
+## Parameters
+
+| Name         | Type     | Description                                                             |
+| ------------ | -------- | ----------------------------------------------------------------------- |
+| `countStart` | `number` | The countdown's initial value.                                          |
+| `countStop`  | `number` | The value at which the countdown ends (default is `0`).                 |
+| `intervalMs` | `number` | The time in milliseconds between countdown updates (default is `1000`). |
+
+## Returns
+
+| Name             | Type         | Description                                                      |
+| ---------------- | ------------ | ---------------------------------------------------------------- |
+| `count`          | `number`     | The current countdown value.                                     |
+| `startCountdown` | `() => void` | A function to begin the countdown.                               |
+| `stopCountdown`  | `() => void` | A function to pause the countdown.                               |
+| `resetCountdown` | `() => void` | A function to reset the countdown to the initial starting value. |

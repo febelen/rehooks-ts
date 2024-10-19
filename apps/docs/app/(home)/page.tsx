@@ -5,7 +5,7 @@ const links = [
   {
     title: "Github",
     icon: <GithubIcon className="text-fd-foreground size-6 transform" />,
-    link: "https://github.com/febelen/rehooks-ts",
+    link: "https://github.com/pyr33x/rehooks-ts",
   },
   {
     title: "NPM",

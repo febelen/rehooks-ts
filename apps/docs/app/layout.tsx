@@ -18,6 +18,7 @@ export const metadata = {
     telephone: false,
   },
 
+  metadataBase: new URL("https://rehooks-ts.vercel.app"),
   title: {
     default: NAME,
     template: `%s - ${NAME}`,

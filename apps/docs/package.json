@@ -17,7 +17,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@febelen/rehooks-ts": "workspace:*",
+    "rehooks-ts": "workspace:*",
     "utils": "workspace:*",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/mdx": "^2.0.13",

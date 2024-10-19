@@ -10,7 +10,7 @@ const links = [
   {
     title: "NPM",
     icon: <NpmIcon className="text-fd-foreground size-6 transform" />,
-    link: "https://www.npmjs.com/package/@febelen/rehooks-ts",
+    link: "https://www.npmjs.com/package/rehooks-ts",
   },
 ];
 

@@ -10,16 +10,16 @@
 </div>
 
 <div align="center">
-  <pre>npm i --save-dev <a href="https://www.npmjs.com/package/@febelen/rehooks-ts">@febelen/rehooks-ts</a></pre>
+  <pre>npm i --save-dev <a href="https://www.npmjs.com/package/rehooks-ts">rehooks-ts</a></pre>
 </div>
 
 <h1 align="center">🪄 Usage</h1>
 <p align="center">
-You can easily import hooks from <b>@febelen/rehooks-ts</b> and boom!
+You can easily import hooks from <b>rehooks-ts</b> and boom!
 </p>
 
 ```tsx
-import { useCounter } from '@febelen/rehooks-ts';
+import { useCounter } from 'rehooks-ts';
 
 function Component() {
   const { count, increment, decrement } = useCounter(0);
@@ -30,5 +30,5 @@ function Component() {
 <h1 align="center">🧾 License</h1>
 
 <p align="center">
-<a href="https://www.npmjs.com/package/@febelen/rehooks-ts">Rehooks</a> is licensed under the MIT License.
+<a href="https://www.npmjs.com/package/rehooks-ts">Rehooks</a> is licensed under the MIT License.
 </p>

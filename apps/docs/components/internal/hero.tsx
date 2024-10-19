@@ -14,7 +14,7 @@ export function Hero() {
           Rehooks
         </span>
       </h1>
-      <p className="dark:text-fd-muted-foreground/50 text-fd-muted-foreground mt-1 text-balance text-base lg:text-xl">
+      <p className="dark:text-fd-muted-foreground/50 text-fd-muted-foreground mt-2 text-balance text-center text-base lg:text-xl">
         An optimized, lightweight, and reusable react production-ready hooks
         library written in TypeScript.
       </p>

@@ -9,16 +9,13 @@ A hook that returns a ref and a boolean indicating whether the element is curren
 
 ## Usage
 
-```jsx
+```tsx
 import { useFocus } from "@febelen/rehooks-ts";
 
 function Component() {
-  const [ref, isFocused] =
-    useFocus <
-    HTMLInputElement >
-    ((focusState) => {
-      console.log("Focus state:", focusState);
-    });
+  const [ref, isFocused] = useFocus<HTMLInputElement>((focusState) => {
+    console.log("Focus state:", focusState);
+  });
 
   return (
     <div>

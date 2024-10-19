@@ -28,7 +28,6 @@
     "check-types": "tsc --noEmit"
   },
   "keywords": [
-    "feblen",
     "rehooks",
     "react",
     "typescript",

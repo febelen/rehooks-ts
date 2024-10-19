@@ -18,7 +18,7 @@ export const metadata = {
     telephone: false,
   },
 
-  metadataBase: new URL("https://rehooks-ts.vercel.app"),
+  metadataBase: new URL("https://rehooks.pyr33x.ir"),
   title: {
     default: NAME,
     template: `%s - ${NAME}`,

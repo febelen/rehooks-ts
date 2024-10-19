@@ -54,12 +54,14 @@ const cards: Card[] = [
 
 export function Grid() {
   return (
-    <div className="mt-6 grid grid-cols-1 gap-x-2 gap-y-3 md:grid-cols-2">
+    <div className="mt-6 grid grid-cols-1 gap-x-2 gap-y-3 text-center md:grid-cols-2">
       {cards.map((card) => (
         <Card key={card.id} className={card.class}>
           <CardHeader>
-            <CardTitle className="text-neutral-50">{card.name}</CardTitle>
-            <CardDescription className="text-neutral-200/70">
+            <CardTitle className="text-neutral-800 dark:text-neutral-50">
+              {card.name}
+            </CardTitle>
+            <CardDescription className="text-neutral-800 dark:text-neutral-50/70">
               {card.description}
             </CardDescription>
           </CardHeader>

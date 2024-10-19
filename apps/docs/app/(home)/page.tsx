@@ -29,7 +29,7 @@ export default function HomePage() {
               title={title}
               target="_blank"
               aria-label="Find rehooks-ts"
-              className="transform rounded-full border border-neutral-900 bg-neutral-900/80 p-4 duration-75 ease-in-out hover:scale-105 hover:border-neutral-800"
+              className="transform rounded-full border border-neutral-400 bg-neutral-100/80 p-4 duration-100 ease-in-out hover:scale-105 hover:bg-neutral-200 dark:border-neutral-900 dark:bg-neutral-950 dark:hover:border-neutral-800"
             >
               {icon}
             </a>

@@ -51,10 +51,10 @@
   },
   "license": "MIT",
   "repository": {
-    "url": "git+https://github.com/febelen/rehooks-ts.git"
+    "url": "git+https://github.com/pyr33x/rehooks-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/febelen/rehooks-ts/issues"
+    "url": "https://github.com/pyr33x/rehooks-ts/issues"
   },
-  "homepage": "https://github.com/febelen/rehooks-ts#readme"
+  "homepage": "https://github.com/pyr33x/rehooks-ts#readme"
 }

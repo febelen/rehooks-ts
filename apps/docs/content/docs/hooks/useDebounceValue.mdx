@@ -1,0 +1,37 @@
+---
+title: useDebounceValue
+description: A custom hook that debounces a value, returning the value after the specified delay.
+---
+
+# useDebounceValue
+
+A custom hook that debounces a value, returning the value after the specified delay.
+
+## Usage
+
+```ts
+import { useDebounceValue } from "@febelen/rehooks-ts";
+
+const debouncedSearchTerm = useDebounceValue(searchTerm, 500);
+```
+
+## API
+
+### useDebounceValue
+
+```ts
+function useDebounceValue<T>(value: T, delay: number): T;
+```
+
+#### Parameters
+
+| Name  | Type     | Description                         |
+| ----- | -------- | ----------------------------------- |
+| value | `T`      | The value to debounce.              |
+| delay | `number` | The debounce delay in milliseconds. |
+
+#### Returns
+
+| Name             | Type | Description          |
+| ---------------- | ---- | -------------------- |
+| `debouncedValue` | `T`  | The debounced value. |

@@ -22,7 +22,7 @@ You can easily import hooks from <b>@febelen/rehooks-ts</b> and boom!
 import { useCounter } from '@febelen/rehooks-ts';
 
 function Component() {
-  const [count, increment, decrement] = useCounter(0);
+  const { count, increment, decrement } = useCounter(0);
   ...
 }
 ```

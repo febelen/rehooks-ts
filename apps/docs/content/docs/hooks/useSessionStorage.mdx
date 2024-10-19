@@ -1,60 +1,41 @@
 ---
 title: useSessionStorage
-description: A handy hook that manages a state variable using session storage, ensuring data persistence during a browser session.
+description: A React hook that allows you to persist data across browser sessions.
 ---
 
-# Storing Temporary Data with useSessionStorage
+# useSessionStorage
 
-This custom hook helps you manage a state variable that's stored in the browser's session storage. It provides a convenient way to keep data persistent throughout a single browser session.
+A React hook that allows you to persist data across browser sessions.
 
 ## Usage
 
-```ts
-import { useSessionStorage } from "@febelen/rehooks-ts";
-
-const [name, setName] = useSessionStorage("name", "John Doe");
-```
-
-## Parameters
-
-| Name           | Type     | Description                               |
-| -------------- | -------- | ----------------------------------------- |
-| `key`          | `string` | The key for the session storage item.     |
-| `initialValue` | `T`      | The initial value for the state variable. |
-
-## Returns
-
-| Name          | Type                 | Description                                                      |
-| ------------- | -------------------- | ---------------------------------------------------------------- |
-| `storedValue` | `T`                  | The current value synchronized with session storage.             |
-| `setValue`    | `(value: T) => void` | A function to update the state and sync it with session storage. |
-
-## Example
-
 ```tsx
-import React from "react";
 import { useSessionStorage } from "@febelen/rehooks-ts";
 
-export default function SessionStorageDemo() {
-  const [name, setName] = useSessionStorage("name", "John Doe");
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setName(event.target.value);
-  };
-
-  return (
-    <div>
-      <h2>Session Storage Demo</h2>
-      <input
-        type="text"
-        value={name}
-        onChange={handleChange}
-        placeholder="Enter your name"
-      />
-      <p>Your name is: {name}</p>
-    </div>
-  );
-}
+const [value, setValue] = useSessionStorage("key", "defaultValue");
 ```
 
-This `useSessionStorage` hook makes it easy to work with temporary data that needs to persist only for the duration of the browser session. It's a great solution for short-lived data that doesn't need to be stored permanently.
+## API
+
+### useSessionStorage
+
+```ts
+function useSessionStorage<T>(
+  key: string,
+  initialValue: T,
+): [T, (value: T) => void];
+```
+
+#### Parameters
+
+| Name           | Type     | Description                                                                 |
+| -------------- | -------- | --------------------------------------------------------------------------- |
+| `key`          | `string` | The key of the item to be stored in session storage.                        |
+| `initialValue` | `T`      | The initial value to be used if the item does not exist in session storage. |
+
+#### Returns
+
+| Name       | Type                 | Description                                                    |
+| ---------- | -------------------- | -------------------------------------------------------------- |
+| `value`    | `T`                  | The value of the item in session storage.                      |
+| `setValue` | `(value: T) => void` | A function that sets the value of the item in session storage. |

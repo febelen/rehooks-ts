@@ -29,7 +29,7 @@ const cards: Card[] = [
     id: 2,
     name: "Performance",
     description:
-      "Rehooks bundle size is just only 12kb, optimized and fully tested for incredible performance.",
+      "Rehooks bundle size is just only 32kb, optimized and fully tested for incredible performance.",
     content: (
       <Files className="select-none">
         <Folder name="dist" defaultOpen>

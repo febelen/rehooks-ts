@@ -10,10 +10,9 @@
     "check-types": "turbo run check-types",
     "lint": "turbo run lint",
     "prepare": "husky install",
-    "gen-hook": "node ./scripts/generate-hook.js"
+    "generate:hook": "node ./scripts/generate-hook.js"
   },
   "keywords": [
-    "feblen",
     "rehooks",
     "react",
     "typescript",

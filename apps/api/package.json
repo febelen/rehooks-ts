@@ -8,6 +8,7 @@
     "test": "bun test"
   },
   "dependencies": {
+    "@elysiajs/swagger": "^1.1.5",
     "elysia": "latest"
   },
   "devDependencies": {

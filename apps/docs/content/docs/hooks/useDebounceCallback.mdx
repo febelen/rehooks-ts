@@ -1,0 +1,42 @@
+---
+title: useDebounceCallback
+description: A custom hook that debounces a callback function, executing it after the specified delay.
+---
+
+# useDebounceCallback
+
+A custom hook that debounces a callback function, executing it after the specified delay.
+
+## Usage
+
+```ts
+import { useDebounceCallback } from "@febelen/rehooks-ts";
+
+const debouncedSave = useDebounceCallback((value) => {
+  console.log("Saving data:", value);
+}, 500);
+```
+
+## API
+
+### useDebounceCallback
+
+```ts
+function useDebounceCallback<T extends (...args: any[]) => void>(
+  callback: T,
+  delay: number,
+): (...args: Parameters<T>) => void;
+```
+
+#### Parameters
+
+| Name     | Type     | Description                         |
+| -------- | -------- | ----------------------------------- |
+| callback | `T`      | The callback function to debounce.  |
+| delay    | `number` | The debounce delay in milliseconds. |
+
+#### Returns
+
+| Name                | Type                               | Description                                   |
+| ------------------- | ---------------------------------- | --------------------------------------------- |
+| `debouncedCallback` | `(...args: Parameters<T>) => void` | A debounced version of the callback function. |

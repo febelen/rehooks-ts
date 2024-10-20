@@ -40,7 +40,7 @@ class Hook {
   }
 }
 
-export const hook = new Elysia()
+export const hook = new Elysia({ prefix: "/api" })
   .decorate("hook", new Hook())
   .group("/hooks", (app) =>
     app

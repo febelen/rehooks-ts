@@ -2,76 +2,106 @@
   {
     "id": 0,
     "title": "useClipboard",
-    "description": "A hook that provides a function to copy text to the clipboard."
+    "description": "A hook that provides a function to copy text to the clipboard.",
+    "import": "import { useClipboard } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useClipboard"
   },
   {
     "id": 1,
     "title": "useCountDown",
-    "description": "A hook that offers countdown functionality with adjustable start, stop, and interval parameters."
+    "description": "A hook that offers countdown functionality with adjustable start, stop, and interval parameters.",
+    "import": "import { useCountDown } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useCountDown"
   },
   {
     "id": 2,
     "title": "useCounter",
-    "description": "A hook that returns a counter value and a function to increment or decrement the counter."
+    "description": "A hook that returns a counter value and a function to increment or decrement the counter.",
+    "import": "import { useCounter } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useCounter"
   },
   {
     "id": 3,
     "title": "useDebounceCallback",
-    "description": "A custom hook that debounces a callback function, executing it after the specified delay."
+    "description": "A custom hook that debounces a callback function, executing it after the specified delay.",
+    "import": "import { useDebounceCallback } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useDebounceCallback"
   },
   {
     "id": 4,
     "title": "useDebounceValue",
-    "description": "A custom hook that debounces a value, returning the value after the specified delay."
+    "description": "A custom hook that debounces a value, returning the value after the specified delay.",
+    "import": "import { useDebounceValue } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useDebounceValue"
   },
   {
     "id": 5,
     "title": "useEventCallback",
-    "description": "A hook that returns a memoized version of a callback that is stable between renders."
+    "description": "A hook that returns a memoized version of a callback that is stable between renders.",
+    "import": "import { useEventCallback } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useEventCallback"
   },
   {
     "id": 6,
     "title": "useEventListener",
-    "description": "A custom hook to add and clean up an event listener on any target element."
+    "description": "A custom hook to add and clean up an event listener on any target element.",
+    "import": "import { useEventListener } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useEventListener"
   },
   {
     "id": 7,
     "title": "useFocus",
-    "description": "A hook that returns a ref and a boolean indicating whether the element is currently focused."
+    "description": "A hook that returns a ref and a boolean indicating whether the element is currently focused.",
+    "import": "import { useFocus } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useFocus"
   },
   {
     "id": 8,
     "title": "useHover",
-    "description": "A hook that returns a boolean value indicating whether the user is hovering over an element."
+    "description": "A hook that returns a boolean value indicating whether the user is hovering over an element.",
+    "import": "import { useHover } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useHover"
   },
   {
     "id": 9,
     "title": "useKeyPress",
-    "description": "Custom hook to detect if a specified key is pressed."
+    "description": "Custom hook to detect if a specified key is pressed.",
+    "import": "import { useKeyPress } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useKeyPress"
   },
   {
     "id": 10,
     "title": "useLocalStorage",
-    "description": "A hook that manages a state variable in sync with local storage, allowing data persistence across browser sessions."
+    "description": "A hook that manages a state variable in sync with local storage, allowing data persistence across browser sessions.",
+    "import": "import { useLocalStorage } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useLocalStorage"
   },
   {
     "id": 11,
     "title": "useOnlineStatus",
-    "description": "A hook that returns the current online/offline status of the client."
+    "description": "A hook that returns the current online/offline status of the client.",
+    "import": "import { useOnlineStatus } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useOnlineStatus"
   },
   {
     "id": 12,
     "title": "useScroll",
-    "description": "A hook that returns a boolean value indicating whether the user has scrolled horizontally beyond a specified threshold."
+    "description": "A hook that returns a boolean value indicating whether the user has scrolled horizontally beyond a specified threshold.",
+    "import": "import { useScroll } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useScroll"
   },
   {
     "id": 13,
     "title": "useSessionStorage",
-    "description": "A React hook that allows you to persist data across browser sessions."
+    "description": "A React hook that allows you to persist data across browser sessions.",
+    "import": "import { useSessionStorage } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useSessionStorage"
   },
   {
     "id": 14,
     "title": "useToggle",
-    "description": "A hook that provides a boolean state and a function to toggle it."
+    "description": "A hook that provides a boolean state and a function to toggle it.",
+    "import": "import { useToggle } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useToggle"
   }
 ]

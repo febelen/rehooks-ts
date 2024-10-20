@@ -1,11 +1,13 @@
 import { Elysia, t } from "elysia";
-import { readFileSync } from "fs";
 
 type HookData = Readonly<{
   id: number;
   title: string;
   description: string;
 }>;
+
+const path = "hooks.json";
+const file = Bun.file(path);
 
 class Hook {
   public idCounter: number = 0;
@@ -15,10 +17,9 @@ class Hook {
     this.loadData();
   }
 
-  private loadData() {
+  private async loadData() {
     try {
-      const jsonData = readFileSync("hooks.json", "utf-8");
-      this.data = JSON.parse(jsonData);
+      this.data = await file.json();
       this.idCounter =
         this.data.length > 0
           ? Math.max(...this.data.map((hook) => hook.id)) + 1

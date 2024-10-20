@@ -1,0 +1,118 @@
+---
+title: API Reference
+description: The API reference is a detailed documentation of all the endpoints available in the API.
+---
+
+# Introduction
+
+Rehooks API is a RESTFul API that allows you to get all the information of the hooks that are in the repository.
+
+# Limitations
+
+The API is currently open to everyone and does not require any authentication. However, to prevent abusive use of the API, there is a limit to the number of requests.
+
+# Base URL
+
+> The base URL for the API is:
+
+```bash
+https://rehooks.pyr33x.ir/api/hooks
+```
+
+# Typescript usage
+
+- For Hooks:
+
+```ts
+type Hook = {
+  id: number;
+  title: string;
+  description: string;
+  import: string;
+  url: string;
+};
+```
+
+# Endpoints
+
+## GET /hooks
+
+This endpoint returns a list of all the hooks in the repository.
+
+### Parameters
+
+- `limit`: The number of hooks to return. Has no default value.
+- `search`: A string to search for in the title of the hooks.
+
+### Usage
+
+```bash
+GET /api/hooks
+```
+
+### Response
+
+```json
+[
+  {
+    "id": 1,
+    "title": "useCountDown",
+    "description": "A hook that offers countdown functionality with adjustable start, stop, and interval parameters.",
+    "import": "import { useCountDown } from 'rehooks-ts'",
+    "url": "https://rehooks.pyr33x.ir/docs/hooks/useCountDown"
+  },
+]
+...
+```
+
+### GET /hooks/:id
+
+This endpoint returns the details of a specific hook.
+
+### Parameters
+
+- `id`: The ID of the hook to get.
+
+### Usage
+
+```bash
+GET /api/hooks/9
+```
+
+### Response
+
+```json
+{
+  "id": 9,
+  "title": "useKeyPress",
+  "description": "Custom hook to detect if a specified key is pressed.",
+  "import": "import { useKeyPress } from 'rehooks-ts'",
+  "url": "https://rehooks.pyr33x.ir/docs/hooks/useKeyPress"
+}
+```
+
+### Limit Query Parameter
+
+#### Query Parameter
+
+- `limit`: The number of hooks to return. Has no default value.
+- `?limit=10`: Returns the first 10 hooks.
+
+You can use the `limit` query parameter to limit the number of hooks returned. For example, to get the first 10 hooks, you can use the following URL:
+
+```bash
+GET /api/hooks?limit=10
+```
+
+### Search Query Parameter
+
+#### Query Parameter
+
+- `search`: A string to search for in the title of the hooks.
+- `?search=useKeyPress`: Returns all the hooks that contain the word "useKeyPress".
+
+You can use the `search` query parameter to search for a specific hook. For example, to search for the hook `useKeyPress`, you can use the following URL:
+
+```bash
+GET /api/hooks?search=useKeyPress
+```

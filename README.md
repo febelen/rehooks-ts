@@ -27,6 +27,11 @@ function Component() {
 }
 ```
 
+<h1 align="center">Documentation 📚</h1>
+<p align="center">
+Check out the <a href="https://rehooks.pyr33x.ir">documentation</a> for more information.
+</p>
+
 <h1 align="center">🧾 License</h1>
 
 <p align="center">

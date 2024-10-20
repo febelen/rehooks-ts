@@ -1,6 +1,6 @@
 import { swagger } from "@elysiajs/swagger";
 import { cors } from "@elysiajs/cors";
-import { Elysia, t } from "elysia";
+import { Elysia } from "elysia";
 import { hook } from "./hook";
 
 const app = new Elysia()
